@@ -1,9 +1,9 @@
 import React from "react";
 
 const Product = (props) => {
-   const { name, price, id } = props;
+   const { name, price } = props;
    return (
-      <div key={id}>
+      <div>
          <h1>product {name}</h1>
          <h2>product {price} $</h2>
       </div>
