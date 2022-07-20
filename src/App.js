@@ -5,7 +5,8 @@ import ProductsList from "./components/ProductsList/ProductsList";
 
 const App = () => {
    return (
-      <div className="bg-emerald-300" id="products">
+      <div className="bg-stone-50 h-screen flex flex-col" id="products">
+         <h1 className="text-center p-10 text-3xl font-bold text-slate-900">shopping app</h1>
        <ProductsList />
       </div>
    );
