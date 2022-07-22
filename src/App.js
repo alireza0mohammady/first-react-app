@@ -1,15 +1,18 @@
+import HeaderNavbar from "./components/HeaderNavbar/HeaderNavbar";
 import ProductsList from "./components/ProductsList/ProductsList";
 // import HookCounter from "./components/hookcounter/HookCounterClass";
 // import HookCounterFunctional from "./components/hookcounter/HookCounterFunctional";
 // import StateObjectUpdate from "./components/StateObjectUpdate/StateObjectUpdate";
 
 const App = () => {
-   return (
-      <div className="bg-stone-50 h-screen flex flex-col" id="products">
-         <h1 className="text-center p-10 text-3xl font-bold text-slate-900">shopping app</h1>
-       <ProductsList />
-      </div>
-   );
+	return (
+		<div className="h-screen bg-stone-50">
+			<HeaderNavbar />
+			<div className="flex flex-col" id="products">
+				<ProductsList />
+			</div>
+		</div>
+	);
 };
 
 // class App extends Component {
